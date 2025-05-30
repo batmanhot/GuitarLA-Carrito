@@ -85,9 +85,9 @@ function App() {
     setCart([]); // Limpia el carrito
   }
 
-function saveLocalStorage() {
-  localStorage.setItem('cart', JSON.stringify(cart));
-}
+// function saveLocalStorage() {
+//   localStorage.setItem('cart', JSON.stringify(cart));
+// }
 
   
   return (

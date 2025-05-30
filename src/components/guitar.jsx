@@ -1,9 +1,10 @@
 export default function Guitar({guitar, addToCart}) {
 
-    const { id, name, image, description, price } = guitar;
+    const { name, image, description, price } = guitar;
 
-    // const handleClick = (guitar) => {
-        
+    const imagePath = `/img/${image}.jpg`;
+
+    // const handleClick = (guitar) => {        
     //     console.log(`Agregando guitarra ${id} ${name} al carrito`);   
     //     //setCart([...prevCart, {guitar}])
     //     //setCart([guitar])
@@ -15,7 +16,7 @@ export default function Guitar({guitar, addToCart}) {
 
         <div className="col-md-6 col-lg-4 my-4 row align-items-center">
             <div className="col-4">
-                <img className="img-fluid" src={`/img/${image}.jpg`} alt="imagen guitarra" />
+                <img className="img-fluid" src={imagePath} alt="imagen guitarra" />
             </div>
             <div className="col-8">
                 <h3 className="text-black fs-4 fw-bold text-uppercase">{name}</h3>
