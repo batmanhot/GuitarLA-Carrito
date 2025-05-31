@@ -6,10 +6,10 @@ import { db } from "./data/db";
 function App() {
 
   const initialCart = () => {
-    return JSON.parse(localStorage.getItem('cart'))
+    //return JSON.parse(localStorage.getItem('cart'))
 
-    // const localStorageCart = localStorage.getItem('cart');
-    // return localStorageCart ? JSON.parse(localStorageCart) : [];
+    const localStorageCart = localStorage.getItem('cart');
+    return localStorageCart ? JSON.parse(localStorageCart) : [];
   }
 
   const [data] = useState(db)  
